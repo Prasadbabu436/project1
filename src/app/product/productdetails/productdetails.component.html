@@ -1,0 +1,19 @@
+<div class="container">
+<div class="row" *ngIf="productDetails" style="width:800px;">
+    <div class="col-md-5" >
+        <img class="card-img-top" src="{{productDetails.ProductPicUrl}}" alt="Card image">
+        
+
+        <button class="btn-success" (click)="addtocart(productDetails._id.$oid)">Add Cart</button>
+    </div>
+    <div class="col-md-5">
+        <h1>Productid:{{productDetails.Productid}}</h1>
+        <h2 >RAM:{{productDetails.Ram}}</h2>
+        <h3 >Screensize:{{productDetails.Screensize}}</h3>
+
+    </div>
+</div>
+    
+</div>
+
+

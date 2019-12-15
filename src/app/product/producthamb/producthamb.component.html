@@ -1,0 +1,17 @@
+
+<a [routerLink]="['/productdetails',prod._id.$oid]">
+<div class="col-sm-4">
+    
+        <div class="card" style="width:200px; margin:15px" >
+                <img class="card-img-top" [src]="prod.ProductPicUrl" alt="Card image">
+                <div class="card-body">
+                        Productid: <h4 class="card-title">{{prod.Productid}}</h4>
+                        Ram:<p class="card-text">{{prod.Ram}}</p>
+                        Screensize:<p class="card-text">{{prod.Screensize}}</p>
+                        
+                  
+                </div>
+              </div>
+            
+          </div>
+        </a>

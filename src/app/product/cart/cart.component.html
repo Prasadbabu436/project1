@@ -1,0 +1,25 @@
+<div>
+
+    <table class="table table-hover">
+    <thead>
+        <tr>
+          <th>Cart Details</th>
+         
+        </tr>
+      </thead>
+      <tbody>
+        <tr  *ngFor="let i of cartProducts">
+          <td>
+              <img [src]="i.ProductPicUrl">
+          </td>
+          <td>
+              <h3>{{i.Productid}}</h3>
+          </td>
+          
+        </tr>
+       <button class="btn-success" (click)="xyz()">Remove</button>
+       
+      </tbody>
+    </table>
+</div>
+
